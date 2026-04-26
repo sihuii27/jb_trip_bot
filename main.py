@@ -1,5 +1,6 @@
 from telegram.constants import ParseMode
-from telegram import BotCommand
+from telegram import Update, BotCommand
+from telegram.ext import ContextTypes
 async def command_suggestions(update: Update, context: ContextTypes.DEFAULT_TYPE):
     commands = [
         '/start - Plan a new JB trip',
