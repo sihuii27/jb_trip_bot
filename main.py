@@ -1,5 +1,5 @@
 from telegram.constants import ParseMode
-from telegram import Update, BotCommand
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, BotCommand
 from telegram.ext import ContextTypes
 async def command_suggestions(update: Update, context: ContextTypes.DEFAULT_TYPE):
     commands = [
